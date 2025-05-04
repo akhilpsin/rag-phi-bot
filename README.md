@@ -11,16 +11,18 @@ A lightweight Retrieval-Augmented Generation (RAG) chatbot that uses Ollama's **
 rag-phi-bot/
 ├── chatbot/
 │   ├── chatbot.py          # Main chatbot loop and chat logic
-│   ├── phi\_interface.py    # Stream interface for Ollama's Phi model
-│   ├── document\_indexer.py # PDF parser, chunker, embedder, FAISS indexer
+│   ├── phi_interface.py    # Stream interface for Ollama's Phi model
+│   ├── document_indexer.py # PDF parser, chunker, embedder, FAISS indexer
 │   ├── retriever.py        # Loads index, retrieves top-matching chunks
 │   └── utils.py            # Hallucination filter, keyword loader
 ├── data/
-│   └── AkhilSuresh\_CV.pdf  # Example PDF to index
-├── doc\_index/              # Auto-generated FAISS index & metadata
-├── hallucination\_keywords.txt # Optional custom hallucination keywords
-├── run\_chat.py             # Chat CLI entry point
-├── index\_document.py       # Script to index a new PDF
+│   └── AkhilSuresh_CV.pdf  # Example PDF to index
+├── doc_index/              # Auto-generated FAISS index & metadata
+│   └── faiss.index
+│   └── metadata.pkl
+├── hallucination_keywords.txt # Optional custom hallucination keywords
+├── run_chat.py             # Chat CLI entry point
+├── index_document.py       # Script to index a new PDF
 ├── requirements.txt
 └── README.md
 
