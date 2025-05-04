@@ -2,7 +2,7 @@ import aiofiles
 import os
 
 HALLUCINATION_FILE = "hallucination_keywords.txt"
-DEFAULT_KEYWORDS = ["you are", "scenario", "imagine", "consider a"]
+DEFAULT_KEYWORDS = ["you are", "scenario", "imagine", "consider"]
 
 async def load_hallucination_keywords():
     if os.path.exists(HALLUCINATION_FILE):

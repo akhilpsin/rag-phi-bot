@@ -23,7 +23,8 @@ class ChatBot:
             user_input = await self.phi.simplify_question(user_input)
 
         # Prepare message history
-        messages = [{"role": "system", "content": "Answer concisely and truthfully."}]
+        messages = [{"role": "system", "content": "Please answer the user's questions directly and factually. Avoid speculation, hypothetical scenarios, or imaginative responses. Focus on providing truthful, concise, and accurate information."}]
+        
 
         # Add document context if enabled
         if self.use_documents and self.retriever:
@@ -44,11 +45,11 @@ class ChatBot:
         # Stream the response
         async for chunk in self.phi.stream_response(messages):
             token = chunk['message']['content']
-            if contains_hallucination(token, self.hallucination_keywords):
-                print("\n🛑 Stopped hallucinated response.\n")
-                break
             print(token, end="", flush=True)
             response += token
+            if contains_hallucination(response, self.hallucination_keywords):
+                print("\n🛑 Stopped hallucinated response.\n")
+                break
 
         # Save full interaction to chat history
         self.chat_history.append((original_input, response))
