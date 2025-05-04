@@ -83,36 +83,38 @@ pip install -r requirements.txt
 
 **Key Libraries:**
 
-* `faiss-cpu`
-* `sentence-transformers`
-* `PyMuPDF` (`fitz`)
-* `ollama`
-* `aiofiles`
-* `numpy`, `pickle`
+- `faiss-cpu`
+- `sentence-transformers`
+- `PyMuPDF` (`fitz`)
+- `ollama`
+- `aiofiles`
+- `numpy`, `pickle`
 
 ---
+
 ## Output Screenshots
 
 ### 1. With Document Mode ON
 
 When **Document Mode** is enabled, the chatbot retrieves and uses relevant documents to provide more accurate answers. Here is how the chatbot behaves with this feature enabled:
 
-![Document Mode ON](path/to/your/screenshot/document_mode_on.png)
+![Document Mode ON](https://github.com/akhilpsin/rag-phi-bot/Screenshot/Screenshot_DocMode_ON.jpg)
 
 ### 2. With Document Mode OFF
 
 When **Document Mode** is disabled, the chatbot relies only on its internal knowledge base to answer the questions. Here is how the chatbot behaves without this feature:
 
-![Document Mode OFF](path/to/your/screenshot/document_mode_off.png)
+![Document Mode OFF](https://github.com/akhilpsin/rag-phi-bot/Screenshot/Screenshot_DocMode_OFF.jpg)
 
 ---
 
 ### Instructions:
+
 - Ensure that you have enabled the proper mode when starting the chatbot (`Y` for Document Mode ON, `N` for Document Mode OFF).
 - Check the output screenshots to see the difference in how the bot answers with or without using documents.
 
 ## 📌 Notes
 
-* To customize hallucination filtering, edit `hallucination_keywords.txt`.
-* Embeddings are generated using [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) from SentenceTransformers.
-* Only English-language PDFs are supported for now.
+- To customize hallucination filtering, edit `hallucination_keywords.txt`.
+- Embeddings are generated using [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) from SentenceTransformers.
+- Only English-language PDFs are supported for now.
