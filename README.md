@@ -52,14 +52,14 @@ rag-phi-bot/
 2. **Clone and set up this repo**:
 
    ```bash
-   git clone https://github.com/yourusername/rag-chatbot
-   cd rag-chatbot
+   git clone "https://github.com/akhilpsin/rag-phi-bot.git"
+   cd rag-phi-bot
    pip install -r requirements.txt
    ```
 
 3. **Index your documents**:
 
-   Place your PDF in the `data/` folder, then run:
+   Place your PDF in the `data/` folder, then run :
 
    ```bash
    python index_document.py
