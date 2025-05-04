@@ -98,13 +98,13 @@ pip install -r requirements.txt
 
 When **Document Mode** is enabled, the chatbot retrieves and uses relevant documents to provide more accurate answers. Here is how the chatbot behaves with this feature enabled:
 
-![Document Mode ON](https://github.com/akhilpsin/rag-phi-bot/Screenshot/Screenshot_DocMode_ON.jpg)
+![Document Mode ON](https://github.com/akhilpsin/rag-phi-bot/blob/main/Screenshot/Screenshot_DocMode_ON.jpg)
 
 ### 2. With Document Mode OFF
 
 When **Document Mode** is disabled, the chatbot relies only on its internal knowledge base to answer the questions. Here is how the chatbot behaves without this feature:
 
-![Document Mode OFF](https://github.com/akhilpsin/rag-phi-bot/Screenshot/Screenshot_DocMode_OFF.jpg)
+![Document Mode OFF](https://github.com/akhilpsin/rag-phi-bot/blob/main/Screenshot/Screenshot_DocMode_OFF.jpg)
 
 ---
 
