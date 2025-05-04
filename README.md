@@ -8,7 +8,7 @@ A lightweight Retrieval-Augmented Generation (RAG) chatbot that uses Ollama's **
 
 ```
 
-rag\_chatbot/
+rag-phi-bot/
 ├── chatbot/
 │   ├── chatbot.py          # Main chatbot loop and chat logic
 │   ├── phi\_interface.py    # Stream interface for Ollama's Phi model
