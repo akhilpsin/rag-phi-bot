@@ -49,8 +49,6 @@ rag-phi-bot/
    ollama run phi
    ```
 
-````
-
 2. **Clone and set up this repo**:
 
    ```bash
